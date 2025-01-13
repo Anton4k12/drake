@@ -1,26 +1,57 @@
-<div class="h-[200vh] relative">
-  <img class="w-full h-full absolute -z-10" src="/images/bg.png" />
-  <div class="px-10 pt-32 flex items-center gap-[100px]">
-    <div class="flex flex-col gap-10">
-      <div class="flex flex-col gap-6">
-        <h1 class="text-5xl font-black">
-          CONTENT IS 91% OF <br />
-          GLOBAL INTERNET TRAFFIC. LIFT MAKES IT ACTIONABLE
-        </h1>
+---
+import { Button } from "./ui/button";
+---
 
-        <p class="text-xl font-light">
-          We enable businesses to extract insights and take action at the same <br
-          /> speed and scale that content is created and consumed. Our AI Agents
-          <br /> reduce the cost of real-time data extraction by up to 90%, while
-          <br /> collecting 10x the number of inferences.
-        </p>
+<div class="flex flex-col overflow-hidden items-center text-white relative">
+  <img
+    class="bg-cover min-w-[110vw] bg-[#13002f] h-full absolute -z-10"
+    src="/images/bg.png"
+  />
+
+  <div class="flex flex-col pt-72 pb-32 gap-40">
+    <div class="px-10 flex items-center gap-[100px]">
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-6">
+          <h1 class="text-5xl italic font-black">
+            CONTENT IS <span class="text-[#6af3de]">91%</span> OF <br />
+            GLOBAL INTERNET TRAFFIC. <span class="text-[#6af3de]"
+              >LIFT MAKES IT ACTIONABLE</span
+            >
+          </h1>
+
+          <p class="text-xl font-light">
+            We enable businesses to extract insights and take action at the same <br
+            /> speed and scale that content is created and consumed. Our AI Agents
+            <br /> reduce the cost of real-time data extraction by up to 90%, while
+            <br /> collecting 10x the number of inferences.
+          </p>
+        </div>
+
+        <Button>Start Building with drake</Button>
       </div>
 
-      <button class="px-4 py-4 w-fit bg-black rounded-xl text-white"
-        >Start Building with drake</button
-      >
+      <img src="/images/aboutusimg.svg" />
     </div>
 
-    <img src="/images/aboutusimg.svg" />
+    <div class="px-10 flex items-center gap-[100px]">
+      <img class="w-[600px] h-[500px]" src="/images/aboutusimg2.svg" />
+
+      <div class="flex flex-col gap-10">
+        <div class="flex flex-col gap-6">
+          <h1 class="text-5xl font-black italic">
+            LIFT STUDIO CHANGES THE <br /> GAME FOR DECENTRALIZED AI VISION
+          </h1>
+
+          <p class="text-xl font-light">
+            You don’t need to be a programmer or data scientist to train
+            powerful AI models to extract data. Our easy to use platform enables
+            non-technical users to deploy AI agents optimized for social,
+            streaming, gaming, <br /> browsing and sports content in just a few minutes.
+          </p>
+        </div>
+
+        <Button>Access the Beta</Button>
+      </div>
+    </div>
   </div>
 </div>
