@@ -1,0 +1,13 @@
+---
+const { desc, img } = Astro.props;
+---
+
+<div class="flex border rounded-lg flex-col">
+  <div class="flex h-60 bg-[#57669C] justify-center">
+    <img src={img} />
+  </div>
+
+  <div class="flex h-44 items-center px-[42px] justify-center">
+    <p class="text-center text-text-color text-xl max-w-[330px]">{desc}</p>
+  </div>
+</div>

@@ -1,3 +1,46 @@
-<div class="text-white h-screen">
-  <div class="uppercase">how builders are using drake</div>
+---
+import Card from "./Card.astro";
+import EmblaCarousel from "./EmblaCarousel.tsx";
+import type { EmblaOptionsType } from "embla-carousel";
+
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
+// import InteractiveCarousel from "./InteractiveCarousel";
+
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDE_COUNT = 6;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+---
+
+<div
+  class="text-white pt-20 px-10 bg-gradient-to-b from-[#4B5A91] to-[#49588f] h-screen"
+>
+  <h1
+    class="uppercase font-black tracking-[-0.01em] text-[56px] text-center italic"
+  >
+    how builders are using drake
+  </h1>
+
+  <!-- <InteractiveCarousel client:load /> -->
+
+  <EmblaCarousel client:load options={OPTIONS}>
+    <Card
+      img="/images/card1.svg"
+      desc="A social platform integrating real-time community rewards over Twitch & YouTube."
+    />
+    <Card
+      img="/images/card2.svg"
+      desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
+    />
+    <Card
+      img="/images/card1.svg"
+      desc="A social platform integrating real-time community rewards over Twitch & YouTube."
+    />
+  </EmblaCarousel>
 </div>
