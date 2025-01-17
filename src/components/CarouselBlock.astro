@@ -11,7 +11,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-// import InteractiveCarousel from "./InteractiveCarousel";
+import InteractiveCarousel from "./InteractiveCarousel";
 
 const OPTIONS: EmblaOptionsType = { loop: true };
 const SLIDE_COUNT = 6;
@@ -27,9 +27,9 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
     how builders are using drake
   </h1>
 
-  <!-- <InteractiveCarousel client:load /> -->
+  <InteractiveCarousel client:load />
 
-  <EmblaCarousel client:load options={OPTIONS}>
+  <!-- <EmblaCarousel client:load options={OPTIONS}>
     <Card
       img="/images/card1.svg"
       desc="A social platform integrating real-time community rewards over Twitch & YouTube."
@@ -42,5 +42,5 @@ const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
       img="/images/card1.svg"
       desc="A social platform integrating real-time community rewards over Twitch & YouTube."
     />
-  </EmblaCarousel>
+  </EmblaCarousel> -->
 </div>
