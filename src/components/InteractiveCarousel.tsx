@@ -18,59 +18,47 @@ export default function CarouselSize() {
       }}
       className="w-full"
     >
-      <CarouselContent>
+      <CarouselContent className="flex gap-8">
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card1.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+          <Card
+            img="/images/card1.svg"
+            desc="A social platform integrating real-time community rewards over Twitch & YouTube."
+          />
         </CarouselItem>
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card2.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+          <Card
+            img="/images/card2.svg"
+            desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
+          />
         </CarouselItem>
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card3.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+          <Card
+            img="/images/card3.svg"
+            desc="A game studio embedding AI Agents to capture insights from every player session."
+          />
         </CarouselItem>
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card1.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+          <Card
+            img="/images/card1.svg"
+            desc="A social platform integrating real-time community rewards over Twitch & YouTube."
+          />
         </CarouselItem>
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card2.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+          <Card
+            img="/images/card2.svg"
+            desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
+          />
         </CarouselItem>
 
-        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <div className="p-1">
-            <Card
-              img="/images/card3.svg"
-              desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-            />
-          </div>
+        <CarouselItem className="pr-8 md:basis-1/2 lg:basis-1/3">
+          <Card
+            img="/images/card3.svg"
+            desc="A game studio embedding AI Agents to capture insights from every player session."
+          />
         </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
