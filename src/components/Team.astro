@@ -1,0 +1,87 @@
+---
+import TeamCard from "./TeamCard.astro";
+---
+
+<div class="px-10 py-20 text-white bg-gradient-to-b from-black to-[#222C53]">
+  <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-4 items-center">
+      <img class="size-20" src="/images/teamimg.png" />
+
+      <h1 class="font-black text-[56px] italic">MEET THE TEAM</h1>
+    </div>
+
+    <div>
+      <div class="flex justify-between">
+        <img src="/images/teamedge.svg" />
+
+        <img src="/images/teamedge2.svg" />
+      </div>
+
+      <div class="grid grid-cols-3 gap-[50px]">
+        <TeamCard
+          img="/images/teamimg1.png"
+          ,
+          name="Ivan"
+          ,
+          position="Founder"
+        />
+
+        <TeamCard
+          img="/images/teamimg2.png"
+          ,
+          name="Charlie"
+          ,
+          position="Strategy Lead"
+        />
+
+        <TeamCard
+          img="/images/teamimg3.png"
+          ,
+          name="Jyro"
+          ,
+          position="Gaming Lead"
+        />
+
+        <TeamCard
+          img="/images/teamimg4.png"
+          ,
+          name="Simon"
+          ,
+          position="Technical Lead"
+        />
+
+        <TeamCard
+          img="/images/teamimg5.png"
+          ,
+          name="Franklin"
+          ,
+          position="Partnership Lead"
+        />
+
+        <TeamCard
+          img="/images/teamimg6.png"
+          ,
+          name="Reza"
+          ,
+          position="ZK Researcher"
+        />
+
+        <div class="col-span-3">
+          <TeamCard
+            img="/images/teamimg7.png"
+            ,
+            name="Kate"
+            ,
+            position="Marketing Lead"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-between">
+        <img src="/images/teamedge3.svg" />
+
+        <img src="/images/teamedge4.svg" />
+      </div>
+    </div>
+  </div>
+</div>
