@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "prettier": "^3.4.2",
-    "prettier-plugin-tailwindcss": "^0.6.9"
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss-border-image": "^1.1.2"
   }
 }
