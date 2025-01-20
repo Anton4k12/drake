@@ -55,5 +55,17 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate", "tailwindcss-border-image")],
+  plugins: [
+    require("tailwindcss-animate", "tailwindcss-border-image"),
+    // plugin(function ({ addUtilities }) {
+    //   addUtilities({
+    //     ".mask-gradient-to-r": {
+    //       "-webkit-mask": "linear-gradient(to right, transparent, black 20%);",
+    //     },
+    //     ".mask-gradient-to-l": {
+    //       "-webkit-mask": "linear-gradient(to left, transparent, black 20%);",
+    //     },
+    //   });
+    // }),
+  ],
 };
