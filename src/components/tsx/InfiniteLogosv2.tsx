@@ -2,12 +2,16 @@ import { motion } from "framer-motion";
 import React from "react";
 
 const CompanyLogoData = [
-  { src: "/images/1logo.svg", alt: "TON", link: "https://ton.org" },
-  { src: "/images/2logo.svg", alt: "Bitcoin", link: "https://bitcoin.org" },
-  { src: "/images/3logo.svg", alt: "TRON", link: "https://tron.network" },
-  { src: "/images/4logo.svg", alt: "Solana", link: "https://solana.com" },
-  { src: "/images/5logo.svg", alt: "Tether", link: "https://tether.to" },
-  { src: "/images/6logo.svg", alt: "Cardano", link: "https://cardano.org" },
+  { src: "/images/logo1v.png", alt: "logo1" },
+  { src: "/images/logo2v.svg", alt: "logo2" },
+  { src: "/images/logo3v.svg", alt: "logo3" },
+  { src: "/images/logo5v.svg", alt: "logo5" },
+  { src: "/images/logo7v.png", alt: "logo7" },
+  { src: "/images/logo8v.png", alt: "logo8" },
+  { src: "/images/logo9v.svg", alt: "logo9" },
+  { src: "/images/logo10v.svg", alt: "logo10" },
+  { src: "/images/logo12v.svg", alt: "logo12" },
+  { src: "/images/logo14v.png", alt: "logo14" },
 ];
 
 const InfiniteScrollingLogosAnimation = () => {
@@ -31,14 +35,14 @@ const InfiniteScrollingLogosAnimation = () => {
             ease: "linear",
             repeat: Infinity,
           }}
-          className="flex flex-none items-center gap-10 pr-16 lg:gap-16"
+          className="flex flex-none items-center gap-10 pr-16 lg:gap-6"
         >
           {duplicatedLogos.map(({ src, alt }, index) => (
             <img
               key={`${alt}-${index}`}
               src={src}
               alt={alt}
-              className="h-fit w-28 flex-none flex-grow-0 cursor-pointer"
+              className="h-fit w-52 flex-none flex-grow-0 cursor-pointer rounded-3xl bg-white/[.08] px-6 py-4"
             />
           ))}
         </motion.div>
