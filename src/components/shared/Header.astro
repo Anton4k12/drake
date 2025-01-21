@@ -1,14 +1,24 @@
+---
+import minilogo from "../../assets/minilogo.svg";
+import { Image } from "astro:assets";
+import arrow from "../../assets/arrowUpRightWhite.svg";
+---
+
 <div class="px-10 pt-4 text-white w-full z-50 fixed">
   <div
-    class="flex p-2.5 border border-[#ffffff1f] backdrop-blur-[32px] rounded-[20px] items-center justify-between"
+    class="flex p-2.5 border bg-black/20 font-medium border-[#ffffff1f] backdrop-blur-[32px] rounded-[20px] items-center justify-between"
   >
-    <div>
-      <img class="w-28 h-8 cursor-pointer" src="/images/drakelogo.png" />
+    <div class="pl-2">
+      <img class="h-[26px] cursor-pointer" src="/images/drakelogo.png" />
     </div>
 
     <div class="flex *:rounded-full *:cursor-pointer gap-2">
       <div class="flex hover:bg-white/10 gap-2 px-4 py-[10px]">
-        <img class="size-6" src="/images/smalldrakelogo.png" />
+        <div
+          class="size-6 border border-[#ffffff1f] flex items-center justify-center rounded-full bg-white/10"
+        >
+          <img class="size-4" src={minilogo.src} />
+        </div>
 
         <div>$DRAKE Token</div>
       </div>
@@ -24,10 +34,10 @@
 
     <div>
       <button
-        class="px-4 gap-1 group hover:opacity-80 flex py-2.5 w-fit bg-gradient-to-l from-[#889CDF] to-[#303753] rounded-xl text-white"
+        class="px-4 gap-1.5 group hover:opacity-80 flex justify-center items-center py-2.5 w-fit bg-gradient-to-l from-[#889CDF] to-[#515c8a] rounded-xl text-white"
         >AI Machines <img
-          class="group-hover:rotate-45 transition"
-          src="/images/arrowUpRightWhite.svg"
+          class="group-hover:rotate-45 stroke-2 size-4 transition"
+          src={arrow.src}
         />
       </button>
     </div>

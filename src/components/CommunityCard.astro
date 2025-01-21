@@ -1,5 +1,6 @@
 ---
 const { name, logo, text, background } = Astro.props;
+import arrow from "../assets/arrowUpRight.svg";
 ---
 
 <div
@@ -16,12 +17,9 @@ const { name, logo, text, background } = Astro.props;
   </div>
 
   <div
-    class="bg-white group justify-center flex gap-1 px-2 py-[14px] text-black"
+    class="bg-white items-center font-medium group justify-center flex gap-1.5 px-2 py-[14px] text-black"
   >
     Join on {name}
-    <img
-      class="group-hover:rotate-45 transition"
-      src="/images/arrowUpRight.svg"
-    />
+    <img class="group-hover:rotate-45 size-4 transition" src={arrow.src} />
   </div>
 </div>
