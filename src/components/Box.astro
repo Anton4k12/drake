@@ -4,8 +4,12 @@ const { desc, img } = Astro.props;
 
 <!-- [border-image:linear-gradient(to_bottom_left,#889CDF,#303753)_30] -->
 <div
-  class="border border-transparent z-10 bg-gradient-to-bl backdrop-blur-sm from-[#889CDF]/30 to-[#303753]/30 rounded-2xl flex flex-col p-8 gap-8 items-center"
+  class="bg-gradient-to-bl p-[2px] z-10 rounded-2xl from-[#889CDF]/30 to-[#303753]/30"
 >
-  <img class="h-[100px]" src={img} />
-  <div class="text-xl font-light text-center">{desc}</div>
+  <div
+    class="z-20 bg-gradient-to-bl backdrop-blur-sm from-[#889CDF]/30 to-[#303753]/30 rounded-2xl flex flex-col p-8 gap-8 items-center"
+  >
+    <img class="h-[100px]" src={img} />
+    <div class="text-xl font-light text-center">{desc}</div>
+  </div>
 </div>
