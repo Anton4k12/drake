@@ -6,13 +6,18 @@ import InteractiveCarousel from "./tsx/InteractiveCarousel";
 ---
 
 <div
-  class="text-white pt-20 px-10 flex flex-col gap-12 bg-gradient-to-b from-[#000] to-[#000] h-screen"
+  class="text-white relative pt-20 px-10 flex flex-col gap-12 bg-gradient-to-b from-[#000] to-[#000] h-screen"
 >
   <h1
     class="uppercase font-black tracking-[-0.01em] text-[56px] text-center italic"
   >
     how builders are using drake
   </h1>
+
+  <div
+    class="absolute top-0 z-10 right-10 w-52 bottom-0 bg-gradient-to-l from-black to-transparent"
+  >
+  </div>
 
   <InteractiveCarousel client:load />
 

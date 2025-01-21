@@ -21,13 +21,6 @@ export default function CarouselSize() {
       <CarouselContent className="flex gap-8">
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
-            img="/images/card1.svg"
-            desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-          />
-        </CarouselItem>
-
-        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-          <Card
             img="/images/card2.svg"
             desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
           />
@@ -42,22 +35,29 @@ export default function CarouselSize() {
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
-            img="/images/card1.svg"
-            desc="A social platform integrating real-time community rewards over Twitch & YouTube."
+            img="/images/card4.svg"
+            desc="A Prediction Market seeking robust real-time data feeds to scale their consumer app."
           />
         </CarouselItem>
 
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
-            img="/images/card2.svg"
-            desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
+            img="/images/card5.svg"
+            desc="Video game studios enabling community building analytics with zero integration."
+          />
+        </CarouselItem>
+
+        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+          <Card
+            img="/images/card6.svg"
+            desc="A marketing agency building automated real-time brand influencer matching."
           />
         </CarouselItem>
 
         <CarouselItem className="pr-8 md:basis-1/2 lg:basis-1/3">
           <Card
-            img="/images/card3.svg"
-            desc="A game studio embedding AI Agents to capture insights from every player session."
+            img="/images/card1.svg"
+            desc="A social platform integrating real-time community rewards over Twitch & YouTube."
           />
         </CarouselItem>
       </CarouselContent>
