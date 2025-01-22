@@ -1,19 +1,21 @@
 <div class="text-white relative bg-gradient-to-b from-[#222C53] to-black">
   <img
-    class="absolute top-[650px] mix-blend-color-dodge"
+    class="absolute hidden lg:block top-[650px] mix-blend-color-dodge"
     src="/images/howitworksimg2.png"
   />
 
-  <div class="pt-20 pb-24 px-10">
+  <div class="pt-20 pb-24 lg:px-10 px-5">
     <h1 class="uppercase font-black text-center italic text-[56px]">
       how it works
     </h1>
 
-    <div class="flex justify-center relative pt-[90px]">
+    <div
+      class="lg:flex-row flex flex-col gap-[29px] justify-center relative pt-[90px]"
+    >
       <img class="z-10 hue-rotate-[320deg]" src="/images/howitworksimg1.svg" />
 
       <div
-        class="absolute right-0 p-6 z-20 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
+        class="lg:absolute right-0 p-6 z-20 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
       >
         <p class="uppercase text-sm text-[#fff6] font-medium tracking-[0.5px]">
           layer 01
@@ -30,10 +32,15 @@
         </div>
       </div>
 
+      <img
+        class="lg:hidden top-[650px] mix-blend-color-dodge"
+        src="/images/howitworksimg2.png"
+      />
+
       <!-- <img class="absolute bottom-0 w-full" src="/images/howitworksimg2.png" /> -->
 
       <div
-        class="absolute -bottom-10 z-20 left-0 p-6 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
+        class="lg:absolute -bottom-10 z-20 left-0 p-6 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
       >
         <p class="uppercase text-sm text-[#fff6] font-medium tracking-[0.5px]">
           layer 02
@@ -52,16 +59,18 @@
     </div>
   </div>
 
-  <div class="text-white pb-20">
-    <div>
-      <div class="flex justify-center relative pt-[90px]">
+  <div class="text-white pb-20 px-5 lg:px-0">
+    <div class="flex-col flex gap-[70px]">
+      <div
+        class="lg:flex-row flex flex-col gap-[102px] justify-center relative lg:pt-[90px]"
+      >
         <img
           class="max-w-[767px] hue-rotate-[300deg]"
           src="/images/howitworksimg3.png"
         />
 
         <div
-          class="absolute top-2/4 -translate-y-1/4 right-0 p-6 z-10 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
+          class="lg:absolute top-2/4 -translate-y-1/4 right-0 p-6 z-10 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
         >
           <p
             class="uppercase text-sm text-[#fff6] font-medium tracking-[0.5px]"
@@ -83,11 +92,13 @@
         </div>
       </div>
 
-      <div class="flex justify-center relative">
+      <div
+        class="lg:flex-row flex flex-col gap-[171px] justify-center relative"
+      >
         <img class="hue-rotate-[300deg]" src="/images/howitworksimg4.svg" />
 
         <div
-          class="absolute top-1/2 -translate-y-1/2 left-10 p-6 z-10 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
+          class="lg:absolute top-1/2 -translate-y-1/2 left-10 p-6 z-10 backdrop-blur-[10px] bg-[#7ba1ff]/20 border-[#ffffff29] flex flex-col gap-2 border rounded"
         >
           <p
             class="uppercase text-sm text-[#fff6] font-medium tracking-[0.5px]"

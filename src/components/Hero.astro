@@ -5,7 +5,7 @@ import arrow from "../assets/arrowUpRight.svg";
 
 <div
   data-hero
-  class="flex relative h-[85vh] z-10 bg-[#000] text-white items-center px-10"
+  class="lg:flex-row flex flex-col relative h-[85vh] z-10 bg-[#000] text-white items-center px-10"
 >
   <img class="absolute left-0 top-0" src="/images/herotestbg.svg" />
 
@@ -14,9 +14,18 @@ import arrow from "../assets/arrowUpRight.svg";
     src="/images/herotestbg2.png"
   />
 
-  <div data-text class="w-1/2 flex flex-col gap-10">
+  <div
+    data-img
+    class="lg:hidden pt-20 z-10 flex h-fit justify-center items-center"
+  >
+    <img class="z-10" src="/images/herosquare.svg" />
+
+    <img class="absolute opacity-80" src="/images/glowhero.png" />
+  </div>
+
+  <div data-text class="lg:w-1/2 flex flex-col gap-10">
     <div class="flex relative flex-col gap-6">
-      <h1 class="text-[56px] leading-[1.1] font-black italic">
+      <h1 class="lg:text-[56px] text-[32px] leading-[1.1] font-black italic">
         AI AGENTS FOR REAL-<br />TIME INTELLIGENCE
       </h1>
 
@@ -40,7 +49,10 @@ import arrow from "../assets/arrowUpRight.svg";
       >Documentation</button
     > -->
   </div>
-  <div data-img class="w-1/2 pt-20 z-10 flex h-fit justify-center items-center">
+  <div
+    data-img
+    class="w-1/2 hidden pt-20 z-10 lg:flex h-fit justify-center items-center"
+  >
     <img class="z-10" src="/images/herosquare.svg" />
 
     <img class="absolute opacity-80" src="/images/glowhero.png" />
