@@ -2,13 +2,14 @@
 import minilogo from "../../assets/minilogo.svg";
 import { Image } from "astro:assets";
 import arrow from "../../assets/arrowUpRightWhite.svg";
+import burger from "../../assets/burger.svg";
 ---
 
-<div class="px-10 pt-4 text-white w-full z-50 fixed">
+<div class="lg:px-10 px-5 pt-4 text-white w-full z-50 fixed">
   <div
-    class="flex p-2.5 border bg-black/20 font-medium border-[#ffffff1f] backdrop-blur-[32px] rounded-[20px] items-center justify-between"
+    class="flex lg:p-2.5 py-4 px-5 border bg-black/20 font-medium border-[#ffffff1f] backdrop-blur-[32px] rounded-[20px] items-center justify-between"
   >
-    <div class="pl-2">
+    <div class="lg:pl-2">
       <img class="h-[26px] cursor-pointer" src="/images/drakelogo.png" />
     </div>
 
@@ -32,14 +33,24 @@ import arrow from "../../assets/arrowUpRightWhite.svg";
       </div>
     </div>
 
-    <div>
+    <div class="flex items-center gap-[6px]">
       <button
-        class="px-4 gap-1.5 group hover:opacity-80 flex justify-center items-center py-2.5 w-fit bg-gradient-to-l from-[#889CDF] to-[#515c8a] rounded-xl text-white"
-        >AI Machines <img
+        class="px-4 hidden gap-1.5 group hover:opacity-80 lg:flex justify-center items-center py-2.5 w-fit bg-gradient-to-l from-[#889CDF] to-[#515c8a] rounded-xl text-white"
+        >AI Machines<img
           class="group-hover:rotate-45 stroke-2 size-4 transition"
           src={arrow.src}
         />
       </button>
+
+      <button
+        class="px-4 gap-1.5 text-sm group hover:opacity-80 py-[6px] flex justify-center items-center w-fit bg-gradient-to-l from-[#889CDF] to-[#515c8a] rounded-xl text-white"
+        >Launch App<img
+          class="group-hover:rotate-45 stroke-2 size-4 transition"
+          src={arrow.src}
+        />
+      </button>
+
+      <img class="size-9" src={burger.src} />
     </div>
   </div>
 </div>
