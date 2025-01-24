@@ -3,15 +3,22 @@ import InfiniteLogosv2 from "./tsx/InfiniteLogosv2";
 import InvertedInfiniteLogosv2 from "./tsx/InvertedInfiniteLogosv2";
 ---
 
-<div data-partners class="px-10 text-white pt-20 flex flex-col gap-[30px]">
+<div
+  data-partners
+  class="lg:px-10 text-white pt-16 lg:pt-20 flex flex-col gap-1 lg:gap-[30px]"
+>
   <div class="flex flex-col gap-5 justify-center items-center">
     <div class="rounded-full">
       <img class="size-20" src="/images/hands-partners.png" />
     </div>
 
-    <h1 class="font-black text-[56px] italic">BUILDING WITH THE BEST</h1>
+    <h1
+      class="font-black text-center leading-[1.2] text-[32px] lg:text-[56px] italic"
+    >
+      BUILDING WITH <br class="lg:hidden" /> THE BEST
+    </h1>
 
-    <div class="text-xl font-light">
+    <div class="lg:text-xl text-center font-light">
       DRAKE is building the first cross-chain platform for scalable AI Vision.
     </div>
   </div>
@@ -33,17 +40,17 @@ import InvertedInfiniteLogosv2 from "./tsx/InvertedInfiniteLogosv2";
   >
   </div> -->
 
-  <div class="flex relative flex-col items-center gap-[30px]">
+  <div class="flex relative flex-col items-center gap-6 lg:gap-[30px]">
     <InfiniteLogosv2 client:load />
     <InvertedInfiniteLogosv2 client:load />
 
     <div
-      class="absolute top-0 left-14 w-40 bottom-0 bg-gradient-to-r from-black to-transparent"
+      class="absolute top-0 lg:left-14 left-0 lg:w-40 w-28 bottom-0 bg-gradient-to-r from-black to-transparent"
     >
     </div>
 
     <div
-      class="absolute top-0 right-14 w-40 bottom-0 bg-gradient-to-l from-black to-transparent"
+      class="absolute top-0 lg:right-14 right-0 lg:w-40 w-28 bottom-0 bg-gradient-to-l from-black to-transparent"
     >
     </div>
   </div>
