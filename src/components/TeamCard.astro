@@ -4,15 +4,15 @@ const { img, name, position } = Astro.props;
 
 <div class="flex flex-col gap-5">
   <div class="flex justify-center">
-    <img class="size-[180px]" src={img} />
+    <img class="lg:size-[180px] size-[99px]" src={img} />
   </div>
 
   <div class="flex flex-col gap-[18px] items-center">
     <div class="flex flex-col gap-3 justify-center items-center">
-      <h1 class="text-[32px] uppercase font-black italic">{name}</h1>
+      <h1 class="lg:text-[32px] text-xl uppercase font-black italic">{name}</h1>
 
       <div class="bg-white/10">
-        <p class="p-2">{position}</p>
+        <p class="p-2 text-xs lg:text-base">{position}</p>
       </div>
     </div>
 

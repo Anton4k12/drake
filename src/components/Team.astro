@@ -2,12 +2,16 @@
 import TeamCard from "./TeamCard.astro";
 ---
 
-<div class="px-10 py-20 text-white bg-gradient-to-b from-black to-[#222C53]">
+<div
+  class="lg:px-10 px-5 py-20 text-white bg-gradient-to-b from-black to-[#222C53]"
+>
   <div class="flex flex-col gap-16">
     <div class="flex flex-col gap-4 items-center">
       <img class="size-20" src="/images/teamimg.png" />
 
-      <h1 class="font-black text-[56px] italic">MEET THE TEAM</h1>
+      <h1 class="font-black lg:text-[56px] text-[32px] italic">
+        MEET THE TEAM
+      </h1>
     </div>
 
     <div>
@@ -17,7 +21,7 @@ import TeamCard from "./TeamCard.astro";
         <img src="/images/teamedge2.svg" />
       </div>
 
-      <div class="grid grid-cols-3 gap-[50px]">
+      <div class="grid lg:grid-cols-3 grid-cols-2 gap-[50px]">
         <TeamCard
           img="/images/teamimg1.png"
           ,
@@ -66,15 +70,21 @@ import TeamCard from "./TeamCard.astro";
           position="ZK Researcher"
         />
 
-        <div class="col-span-3">
-          <TeamCard
-            img="/images/teamimg7.png"
-            ,
-            name="Kate"
-            ,
-            position="Marketing Lead"
-          />
-        </div>
+        <TeamCard
+          img="/images/teamimg7.png"
+          ,
+          name="Kate"
+          ,
+          position="Marketing Lead"
+        />
+
+        <TeamCard
+          img="/images/teamimg8.png"
+          ,
+          name="Theo"
+          ,
+          position="Growth Lead"
+        />
       </div>
 
       <div class="flex justify-between">
