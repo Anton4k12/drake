@@ -4,22 +4,26 @@ import { Button } from "./ui/button";
 
 <div class="flex flex-col overflow-hidden items-center text-white relative">
   <img
-    class="bg-cover min-w-[110vw] hue-rotate-[40deg] bg-[#000] h-full absolute -z-10"
+    class="bg-cover lg:min-w-[110vw] hue-rotate-[40deg] bg-[#000] h-full absolute -z-10"
     src="/images/bg.png"
   />
 
   <div class="flex flex-col pt-72 pb-32 gap-40">
-    <div class="px-10 lg:flex-row flex flex-col items-center gap-[100px]">
+    <div
+      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center gap-[100px]"
+    >
+      <img class="lg:hidden h-80" src="/images/aboutusimg.svg" />
+
       <div class="flex flex-col gap-10">
         <div class="flex flex-col gap-6">
-          <h1 class="text-5xl italic font-black">
+          <h1 class="lg:text-5xl text-2xl italic font-black">
             CONTENT IS <span class="text-[#a2b6fd]">91%</span> OF <br />
             GLOBAL INTERNET TRAFFIC. <span class="text-[#a2b6fd]"
               >DRAKE MAKES IT ACTIONABLE</span
             >
           </h1>
 
-          <p class="text-xl font-light">
+          <p class="lg:text-xl font-light">
             We enable businesses to extract insights and take action at the same <br
             /> speed and scale that content is created and consumed. Our AI Agents
             <br /> reduce the cost of real-time data extraction by up to 90%, while
@@ -33,19 +37,21 @@ import { Button } from "./ui/button";
       <img class="hidden lg:block" src="/images/aboutusimg.svg" />
     </div>
 
-    <div class="px-10 flex items-center gap-[100px]">
+    <div
+      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center gap-[100px]"
+    >
       <img
-        class="w-[600px] h-[500px] hue-rotate-[75deg]"
+        class="lg:w-[600px] lg:h-[500px] h-52 hue-rotate-[75deg]"
         src="/images/aboutusimg2.svg"
       />
 
       <div class="flex flex-col gap-10">
         <div class="flex flex-col gap-6">
-          <h1 class="text-5xl tracking-tighter font-black italic">
+          <h1 class="lg:text-5xl text-2xl tracking-tighter font-black italic">
             DRAKE STUDIO CHANGES THE <br /> GAME FOR DECENTRALIZED <br /> AI VISION
           </h1>
 
-          <p class="text-xl font-light">
+          <p class="lg:text-xl font-light">
             You don’t need to be a programmer or data scientist to train
             powerful AI models to extract data. Our easy to use platform enables
             non-technical users to deploy AI agents optimized for social,
