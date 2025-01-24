@@ -1,9 +1,9 @@
 export default function Card({ img, desc }) {
   return (
-    <div className="rounded-2xl bg-gradient-to-bl from-[#889CDF] to-[#303753] p-[2px]">
+    <div className="rounded-[18px] bg-gradient-to-bl from-[#889CDF] to-[#303753] p-[2px]">
       <div className="flex flex-col overflow-hidden rounded-2xl bg-[#252c44] px-2 pt-2">
-        <div className="relative flex h-60 justify-center rounded-lg bg-[#57669C]/20">
-          <img className="z-10" src={img} />
+        <div className="relative flex h-60 items-center justify-center rounded-lg bg-[#57669C]/20">
+          <img className="z-10 h-fit" src={img} />
 
           <img
             className="absolute bottom-0 top-0 rounded-lg opacity-30"
