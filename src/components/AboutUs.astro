@@ -8,16 +8,18 @@ import { Button } from "./ui/button";
     src="/images/bg.png"
   />
 
-  <div class="flex flex-col pt-72 pb-32 gap-40">
+  <div class="flex flex-col pt-72 lg:pb-32 pb-16 lg:gap-40 gap-16">
     <div
-      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center gap-[100px]"
+      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
       <img class="lg:hidden h-80" src="/images/aboutusimg.svg" />
 
-      <div class="flex flex-col gap-10">
-        <div class="flex flex-col gap-6">
+      <div class="flex flex-col lg:gap-10 gap-6">
+        <div class="flex flex-col lg:gap-6 gap-[18px]">
           <h1 class="lg:text-5xl text-2xl italic font-black">
-            CONTENT IS <span class="text-[#a2b6fd]">91%</span> OF <br />
+            CONTENT IS <span class="text-[#a2b6fd]">91%</span> OF <br
+              class="hidden lg:block"
+            />
             GLOBAL INTERNET TRAFFIC. <span class="text-[#a2b6fd]"
               >DRAKE MAKES IT ACTIONABLE</span
             >
@@ -25,9 +27,11 @@ import { Button } from "./ui/button";
 
           <p class="lg:text-xl font-light">
             We enable businesses to extract insights and take action at the same <br
+              class="hidden lg:block"
             /> speed and scale that content is created and consumed. Our AI Agents
-            <br /> reduce the cost of real-time data extraction by up to 90%, while
-            <br /> collecting 10x the number of inferences.
+            <br class="hidden lg:block" /> reduce the cost of real-time data extraction
+            by up to 90%, while
+            <br class="hidden lg:block" /> collecting 10x the number of inferences.
           </p>
         </div>
 
@@ -38,15 +42,15 @@ import { Button } from "./ui/button";
     </div>
 
     <div
-      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center gap-[100px]"
+      class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
       <img
         class="lg:w-[600px] lg:h-[500px] h-52 hue-rotate-[75deg]"
         src="/images/aboutusimg2.svg"
       />
 
-      <div class="flex flex-col gap-10">
-        <div class="flex flex-col gap-6">
+      <div class="flex flex-col lg:gap-10 gap-6">
+        <div class="flex flex-col lg:gap-6 gap-[18px]">
           <h1 class="lg:text-5xl text-2xl tracking-tighter font-black italic">
             DRAKE STUDIO CHANGES THE <br /> GAME FOR DECENTRALIZED <br /> AI VISION
           </h1>
