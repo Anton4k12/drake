@@ -12,7 +12,7 @@ import { Button } from "./ui/button";
     src="/images/bgmobile.png"
   />
 
-  <div class="flex flex-col pt-72 lg:pb-32 pb-16 lg:gap-40 gap-16">
+  <div class="flex flex-col pt-72 lg:pb-32 pb-16 lg:gap-32 gap-16">
     <div
       class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
@@ -42,13 +42,14 @@ import { Button } from "./ui/button";
         <Button>Start Building with drake</Button>
       </div>
 
-      <img class="hidden lg:block" src="/images/aboutusimg.svg" />
+      <img data-firstpic class="hidden lg:block" src="/images/aboutusimg.svg" />
     </div>
 
     <div
       class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
       <img
+        data-secondpic
         class="lg:w-[600px] lg:h-[500px] h-52 hue-rotate-[75deg]"
         src="/images/aboutusimg2.svg"
       />
@@ -72,3 +73,23 @@ import { Button } from "./ui/button";
     </div>
   </div>
 </div>
+
+<script>
+  import { animate, inView } from "motion";
+
+  inView("[data-firstpic]", (element) => {
+    animate(
+      element,
+      { opacity: [0, 1], scale: [0.7, 1] },
+      { duration: 1, type: "spring", bounce: 0.1 },
+    );
+  });
+
+  inView("[data-secondpic]", (element) => {
+    animate(
+      element,
+      { opacity: [0, 1], scale: [0.7, 1] },
+      { duration: 1, type: "spring", bounce: 0.1 },
+    );
+  });
+</script>
