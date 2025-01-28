@@ -7,10 +7,13 @@ import arrow from "../assets/arrowUpRight.svg";
   data-hero
   class="lg:flex-row flex flex-col relative h-[85vh] z-10 bg-[#000] text-white items-center px-5 lg:px-10"
 >
-  <img class="absolute left-0 top-0" src="/images/herotestbg.svg" />
+  <img
+    class="absolute hidden lg:block left-0 top-0"
+    src="/images/herotestbg.svg"
+  />
 
   <img
-    class="absolute hue-rotate-[300deg] saturate-[50%] left-0 top-36 w-full"
+    class="absolute hidden lg:block hue-rotate-[300deg] saturate-[50%] left-0 top-36 w-full"
     src="/images/herotestbg2.png"
   />
 
@@ -20,10 +23,7 @@ import arrow from "../assets/arrowUpRight.svg";
   >
     <img class="z-10" src="/images/herosquare.svg" />
 
-    <img
-      class="absolute opacity-80 hue-rotate-[45deg]"
-      src="/images/glowhero.png"
-    />
+    <img class="absolute hue-rotate-[45deg]" src="/images/glowhero.png" />
   </div>
 
   <div data-text class="lg:w-1/2 enter_animation flex flex-col gap-10">

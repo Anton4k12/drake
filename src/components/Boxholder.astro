@@ -23,6 +23,18 @@ import Box from "./Box.astro";
 <script>
   import { animate, inView, stagger } from "motion";
 
+  const mql = window.matchMedia("(width <= 640px)");
+
+  if (mql.matches) {
+    inView("[data-box]", (element) => {
+      animate(
+        element,
+        { opacity: [0, 1] },
+        { duration: 2, type: "spring", bounce: 0.1, delay: stagger(0.2) },
+      );
+    });
+  }
+
   inView("[data-animate-box]", () => {
     animate(
       "[data-box]",
