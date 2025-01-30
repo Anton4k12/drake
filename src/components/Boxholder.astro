@@ -3,18 +3,21 @@ import Box from "./Box.astro";
 ---
 
 <div
-  class="grid relative lg:grid-cols-3 grid-cols-1 bg-[#000] text-white lg:py-20 py-12 gap-6 px-5 lg:px-10"
+  class="grid relative lg:grid-cols-3 grid-cols-1 text-white lg:py-20 py-12 gap-6 px-5 lg:px-10"
 >
   <div data-animate-box class="size-px absolute top-32"></div>
   <Box
+    id="box-1"
     desc="Extract data from the content the world is watching and playing at massive scale using proprietary AI models."
     img="/images/boximage1.svg"
   />
   <Box
+    id="box-2"
     desc="Trigger actions in your apps and experiences based on real time events detected in content."
     img="/images/boximage2.svg"
   />
   <Box
+    id="box-3"
     desc="Replace legacy programmatic analytics with AI Agents trained by non-technical users."
     img="/images/boximage3.svg"
   />
@@ -26,20 +29,36 @@ import Box from "./Box.astro";
   const mql = window.matchMedia("(width <= 640px)");
 
   if (mql.matches) {
-    inView("[data-box]", (element) => {
+    inView("[data-animate-box]", () => {
+      animate(
+        "#box-1",
+        { opacity: [0, 1], scale: [0.7, 1] },
+        { duration: 1.5, type: "spring", bounce: 0.1 },
+      );
+    });
+
+    inView("#box-2", (element) => {
       animate(
         element,
-        { opacity: [0, 1] },
-        { duration: 2, type: "spring", bounce: 0.1, delay: stagger(0.2) },
+        { opacity: [0, 1], scale: [0.7, 1] },
+        { duration: 1.5, type: "spring", bounce: 0.1, delay: 0.1 },
+      );
+    });
+
+    inView("#box-3", (element) => {
+      animate(
+        element,
+        { opacity: [0, 1], scale: [0.7, 1] },
+        { duration: 1.5, type: "spring", bounce: 0.1, delay: 0.1 },
+      );
+    });
+  } else {
+    inView("[data-animate-box]", () => {
+      animate(
+        "[data-box]",
+        { opacity: [0, 1], scale: [0.7, 1] },
+        { duration: 1.5, type: "spring", bounce: 0.1, delay: stagger(0.2) },
       );
     });
   }
-
-  inView("[data-animate-box]", () => {
-    animate(
-      "[data-box]",
-      { opacity: [0, 1] },
-      { duration: 2, type: "spring", bounce: 0.1, delay: stagger(0.2) },
-    );
-  });
 </script>

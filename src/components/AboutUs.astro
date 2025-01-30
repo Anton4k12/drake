@@ -17,6 +17,7 @@ import { Button } from "./ui/button";
       class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
       <img
+        style={{ opacity: 0 }}
         data-firstpicmob
         class="lg:hidden h-80"
         src="/images/aboutusimg.svg"
@@ -46,13 +47,19 @@ import { Button } from "./ui/button";
         <Button>Start Building with drake</Button>
       </div>
 
-      <img data-firstpic class="hidden lg:block" src="/images/aboutusimg.svg" />
+      <img
+        style={{ opacity: 0 }}
+        data-firstpic
+        class="hidden lg:block"
+        src="/images/aboutusimg.svg"
+      />
     </div>
 
     <div
       class="lg:px-10 px-5 lg:flex-row flex flex-col items-center lg:gap-[100px] gap-6"
     >
       <img
+        style={{ opacity: 0 }}
         data-secondpic
         class="lg:w-[600px] lg:h-[500px] h-52 hue-rotate-[75deg]"
         src="/images/aboutusimg2.svg"
@@ -83,22 +90,6 @@ import { Button } from "./ui/button";
 <script>
   import { animate, inView } from "motion";
 
-  inView("[data-firstpic]", (element) => {
-    animate(
-      element,
-      { opacity: [0, 1], scale: [0.7, 1] },
-      { duration: 1, type: "spring", bounce: 0.1 },
-    );
-  });
-
-  inView("[data-secondpic]", (element) => {
-    animate(
-      element,
-      { opacity: [0, 1], scale: [0.7, 1] },
-      { duration: 1, type: "spring", bounce: 0.1 },
-    );
-  });
-
   const mql = window.matchMedia("(width <= 640px)");
 
   if (mql.matches) {
@@ -106,8 +97,24 @@ import { Button } from "./ui/button";
       animate(
         element,
         { opacity: [0, 1], scale: [0.7, 1] },
-        { duration: 1, type: "spring", bounce: 0.1 },
+        { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
+      );
+    });
+  } else {
+    inView("[data-firstpic]", (element) => {
+      animate(
+        element,
+        { opacity: [0, 1], scale: [0.7, 1] },
+        { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
       );
     });
   }
+
+  inView("[data-secondpic]", (element) => {
+    animate(
+      element,
+      { opacity: [0, 1], scale: [0.7, 1] },
+      { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
+    );
+  });
 </script>

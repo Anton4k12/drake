@@ -40,17 +40,19 @@ import InvertedInfiniteLogosv2 from "./tsx/InvertedInfiniteLogosv2";
   >
   </div> -->
 
-  <div class="flex relative flex-col items-center gap-6 lg:gap-[30px]">
+  <div
+    class="flex lg:w-fit lg:mx-auto relative flex-col items-center gap-6 lg:gap-[30px]"
+  >
     <InfiniteLogosv2 client:load />
     <InvertedInfiniteLogosv2 client:load />
 
     <div
-      class="absolute top-0 lg:left-14 left-0 lg:w-52 w-28 bottom-0 bg-gradient-to-r from-black to-transparent"
+      class="absolute top-0 left-0 lg:w-52 w-28 bottom-0 bg-gradient-to-r from-black to-transparent"
     >
     </div>
 
     <div
-      class="absolute top-0 lg:right-14 right-0 lg:w-52 w-28 bottom-0 bg-gradient-to-l from-black to-transparent"
+      class="absolute top-0 right-0 lg:w-52 w-28 bottom-0 bg-gradient-to-l from-black to-transparent"
     >
     </div>
   </div>

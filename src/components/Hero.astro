@@ -3,18 +3,35 @@ import { Button } from "./ui/button";
 import arrow from "../assets/arrowUpRight.svg";
 ---
 
+<img
+  class="absolute hidden h-full lg:block hue-rotate-[300deg] saturate-[50%] left-0 top-36 w-full"
+  src="/images/herotestbg2.png"
+/>
+
+<div
+  data-img
+  class="w-1/2 absolute hidden pt-4 z-10 right-10 lg:flex h-fit justify-center items-center"
+>
+  <img class="z-10" src="/images/herosquare.svg" />
+  <!-- 
+<div
+  class="absolute size-[500px] saturate-[0.8] opacity-70 rounded-full bg-[#829dfe] blur-[120px]"
+>
+</div> -->
+
+  <img
+    class="absolute opacity-80 w-fit hue-rotate-[45deg]"
+    src="/images/glowhero.png"
+  />
+</div>
+
 <div
   data-hero
-  class="lg:flex-row flex flex-col relative h-[85vh] z-10 bg-[#000] text-white items-center px-5 lg:px-10"
+  class="lg:flex-row flex flex-col relative lg:h-[85vh] h-screen text-white items-center px-5 lg:px-10"
 >
   <img
     class="absolute hidden lg:block left-0 top-0"
     src="/images/herotestbg.svg"
-  />
-
-  <img
-    class="absolute hidden lg:block hue-rotate-[300deg] saturate-[50%] left-0 top-36 w-full"
-    src="/images/herotestbg2.png"
   />
 
   <div
@@ -26,16 +43,20 @@ import arrow from "../assets/arrowUpRight.svg";
     <img class="absolute hue-rotate-[45deg]" src="/images/glowhero.png" />
   </div>
 
-  <div data-text class="lg:w-1/2 enter_animation flex flex-col gap-10">
+  <div
+    data-text
+    class="lg:w-1/2 relative z-10 enter_animation flex flex-col gap-10"
+  >
     <div class="flex relative flex-col gap-6">
       <h1
+        style={{ opacity: 0 }}
         data-h1
         class="lg:text-[56px] font-BoldItalic text-[32px] leading-[1.1] font-black italic"
       >
         AI AGENTS FOR REAL-<br class="hidden lg:block" />TIME INTELLIGENCE
       </h1>
 
-      <p data-p class="lg:text-xl">
+      <p style={{ opacity: 0 }} data-p class="lg:text-xl">
         DRAKE’S streaming analytics make sports, interactive video, social <br
           class="hidden lg:block"
         />
@@ -43,7 +64,7 @@ import arrow from "../assets/arrowUpRight.svg";
       </p>
     </div>
 
-    <div data-button class="z-10">
+    <div style={{ opacity: 0 }} data-button class="z-10">
       <Button className="flex group items-center gap-2"
         >Documentation <img
           class="group-hover:rotate-45 stroke-2 size-4 transition"
@@ -57,22 +78,17 @@ import arrow from "../assets/arrowUpRight.svg";
     > -->
   </div>
 
-  <div
+  <!-- <div
     data-img
     class="w-1/2 hidden pt-20 z-10 lg:flex h-fit justify-center items-center"
   >
     <img class="z-10" src="/images/herosquare.svg" />
-    <!-- 
-    <div
-      class="absolute size-[500px] saturate-[0.8] opacity-70 rounded-full bg-[#829dfe] blur-[120px]"
-    >
-    </div> -->
 
     <img
       class="absolute opacity-80 w-fit hue-rotate-[45deg]"
       src="/images/glowhero.png"
     />
-  </div>
+  </div> -->
 </div>
 
 <script>
