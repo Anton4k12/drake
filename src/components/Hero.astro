@@ -151,7 +151,7 @@ import arrow from "../assets/arrowUpRight.svg";
 
 <div
   data-hero
-  class="lg:flex-row flex flex-col relative lg:h-[85vh] h-screen text-white items-center px-5 lg:px-10"
+  class="lg:flex-row flex w-fit flex-col gap-24 relative h-[85vh] text-white items-center px-5 lg:px-10"
 >
   <img
     class="absolute hidden lg:block left-0 top-0"
@@ -160,7 +160,7 @@ import arrow from "../assets/arrowUpRight.svg";
 
   <div
     data-img
-    class="lg:hidden pt-20 z-10 flex h-fit justify-center items-center"
+    class="lg:hidden pt-44 z-10 aspect-square w-full flex h-fit justify-center items-center"
   >
     <div
       class="absolute border-[#44a0b6] border lg:size-[225px] size-[100px] rounded-full"
@@ -203,9 +203,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit 8s linear infinite",
+        animation: "orbitmb 8s linear infinite",
         transformOrigin: "32px 32px",
       }}
     >
@@ -213,9 +213,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit2 8s linear infinite",
+        animation: "orbit2mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-4s",
       }}
@@ -224,9 +224,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit3 8s linear infinite",
+        animation: "orbit3mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-2s",
       }}
@@ -235,9 +235,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit4 8s linear infinite",
+        animation: "orbit4mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-2s",
       }}
@@ -246,9 +246,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit5 8s linear infinite",
+        animation: "orbit5mb 8s linear infinite",
         transformOrigin: "32px 32px",
       }}
     >
@@ -256,9 +256,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit6 8s linear infinite",
+        animation: "orbit6mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-4s",
       }}
@@ -267,9 +267,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit7 8s linear infinite",
+        animation: "orbit7mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-6s",
       }}
@@ -278,9 +278,9 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <div
-      class="absolute w-11 h-11 rounded-full"
+      class="absolute icon-hero rounded-full"
       style={{
-        animation: "orbit8 8s linear infinite",
+        animation: "orbit8mb 8s linear infinite",
         transformOrigin: "32px 32px",
         animationDelay: "-6s",
       }}
@@ -289,13 +289,18 @@ import arrow from "../assets/arrowUpRight.svg";
     </div>
 
     <img class="z-10 size-[85px]" src="/images/animationherosquare.png" />
+
+    <div
+      class="absolute size-[250px] -z-10 bg-[#44a0b6] opacity-95 blur-[60px] rounded-full"
+    >
+    </div>
   </div>
 
   <div
     data-text
-    class="lg:w-1/2 relative z-10 enter_animation flex flex-col gap-12"
+    class="lg:w-1/2 relative z-10 enter_animation flex flex-col lg:gap-12 gap-8"
   >
-    <div class="flex relative flex-col gap-4">
+    <div class="flex relative flex-col gap-3">
       <h1
         style={{ opacity: 0 }}
         data-h1
