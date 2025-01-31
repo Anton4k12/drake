@@ -3,6 +3,7 @@ import minilogo from "../../assets/minilogo.svg";
 import { Image } from "astro:assets";
 import arrow from "../../assets/arrowUpRightWhite.svg";
 import burger from "../../assets/burger.svg";
+import InteractiveSheet from "../tsx/InteractiveSheet";
 ---
 
 <div class="lg:px-10 px-5 pt-4 text-white w-full z-50 fixed">
@@ -53,7 +54,9 @@ import burger from "../../assets/burger.svg";
         />
       </button>
 
-      <img class="size-8 lg:hidden block" src={burger.src} />
+      <!-- <img class="size-8 lg:hidden block" src={burger.src} /> -->
+
+      <InteractiveSheet client:load />
     </div>
   </div>
 </div>
