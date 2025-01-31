@@ -19,10 +19,9 @@ export default function SheetDemo() {
       </SheetTrigger>
       <SheetContent side={"top"} className="w-full text-white">
         <SheetHeader className="h-full">
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
           <SheetDescription className="flex flex-col justify-center px-4 pt-6 text-white">
-            <div className="*:cursor-pointer lg:flex">
-              <div className="flex gap-2 px-4 py-[18px] hover:bg-white/10">
+            <div className="flex flex-col gap-6 font-medium *:cursor-pointer lg:flex">
+              <div className="flex items-center gap-2 px-4 hover:bg-white/10">
                 <div className="flex size-6 items-center justify-center rounded-full border border-[#ffffff1f] bg-white/10">
                   <img className="size-4" src={minilogo.src} />
                 </div>
@@ -30,17 +29,15 @@ export default function SheetDemo() {
                 <div>$DRAKE Token</div>
               </div>
 
-              <div className="w-fit px-4 py-[18px] hover:bg-white/10">
-                Nodes
-              </div>
+              <div className="w-fit px-4 hover:bg-white/10">Nodes</div>
 
               <div className="flex items-center gap-2 px-4 hover:bg-white/10">
-                <div className="py-[18px]">Build with DRAKE</div>
+                <div>Build with DRAKE</div>
 
                 <img className="size-5" src="/images/dropdown.svg" />
               </div>
 
-              <div className="pt-[18px]">
+              <div className="pt-[10px]">
                 <button className="group flex w-full items-center justify-center gap-1.5 rounded-xl bg-gradient-to-l from-[#889CDF] to-[#515c8a] py-[10px] text-sm text-white hover:opacity-80 lg:hidden">
                   Launch App
                   <img

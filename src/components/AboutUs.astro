@@ -20,7 +20,7 @@ import { Button } from "./ui/button";
         style={{ opacity: 0 }}
         data-firstpicmob
         class="lg:hidden h-80"
-        src="/images/aboutusimg.svg"
+        src="/images/aboutusimg1.svg"
       />
 
       <div class="flex flex-col lg:gap-10 gap-6">
@@ -51,7 +51,7 @@ import { Button } from "./ui/button";
         style={{ opacity: 0 }}
         data-firstpic
         class="hidden lg:block"
-        src="/images/aboutusimg.svg"
+        src="/images/aboutusimg1.svg"
       />
     </div>
 
@@ -87,34 +87,40 @@ import { Button } from "./ui/button";
   </div>
 </div>
 
-<script>
-  import { animate, inView } from "motion";
+<style>
+  .fadeInScale {
+    opacity: 0;
+    transform: scale(0.7);
+    animation: fadeInScale 1s forwards; /* 1s duration, forwards to hold final state */
+    animation-delay: 0.25s; /* same 0.5s delay you had before */
+  }
 
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+<script>
+  import { inView } from "motion";
+
+  // Check media query
   const mql = window.matchMedia("(width <= 640px)");
 
   if (mql.matches) {
     inView("[data-firstpicmob]", (element) => {
-      animate(
-        element,
-        { opacity: [0, 1], scale: [0.7, 1] },
-        { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
-      );
+      // Instead of animate(), just add a CSS class:
+      element.classList.add("fadeInScale");
     });
   } else {
     inView("[data-firstpic]", (element) => {
-      animate(
-        element,
-        { opacity: [0, 1], scale: [0.7, 1] },
-        { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
-      );
+      element.classList.add("fadeInScale");
     });
   }
 
   inView("[data-secondpic]", (element) => {
-    animate(
-      element,
-      { opacity: [0, 1], scale: [0.7, 1] },
-      { duration: 1, type: "spring", bounce: 0.1, delay: 0.5 },
-    );
+    element.classList.add("fadeInScale");
   });
 </script>

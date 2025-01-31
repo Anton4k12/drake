@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/images/drakecirclelogo.png" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Drake</title>
     <link
       rel="preload"
       href="/fonts/KappaDisplay-BlackItalic.woff"
@@ -14,10 +14,29 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body class="dark">
     <slot />
   </body>
 </html>
+
+<!-- <script>
+  //fixing bugs onload
+  // Helper function
+  let domReady = (cb) => {
+    document.readyState === "interactive" || document.readyState === "complete"
+      ? cb()
+      : document.addEventListener("DOMContentLoaded", cb);
+  };
+
+  domReady(() => {
+    const content = document.querySelector("#content");
+    // Display body when DOM is loaded
+    if (!content) {
+      return;
+    }
+    content.style.visibility = "visible";
+  });
+</script> -->
 
 <style>
   html,
