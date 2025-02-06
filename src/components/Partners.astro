@@ -43,8 +43,9 @@ import InvertedInfiniteLogosv2 from "./tsx/InvertedInfiniteLogosv2";
   <div
     class="flex lg:w-fit sm:max-w-[90vw] lg:mx-auto relative flex-col items-center gap-6 lg:gap-[30px]"
   >
-    <InfiniteLogosv2 client:load />
-    <InvertedInfiniteLogosv2 client:load />
+    <InfiniteLogosv2 direction={"left"} client:load />
+    <InfiniteLogosv2 direction={"right"} client:load />
+    <!-- <InvertedInfiniteLogosv2 client:load /> -->
 
     <div
       class="absolute top-0 left-0 lg:w-52 w-28 bottom-0 bg-gradient-to-r from-black to-transparent"

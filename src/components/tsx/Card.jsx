@@ -11,7 +11,7 @@ export default function Card({ img, desc }) {
           />
         </div>
 
-        <div className="flex h-44 items-center justify-center px-[42px]">
+        <div className="flex h-44 items-center justify-center px-2 lg:px-[42px]">
           <p className="w-[330px] text-center text-xl text-text-color">
             {desc}
           </p>

@@ -1,15 +1,16 @@
 ---
-import Card from "./Card.astro";
-import type { EmblaOptionsType } from "embla-carousel";
+import Card from "./tsx/Card.jsx";
 
 import InteractiveCarousel from "./tsx/InteractiveCarousel";
+
+import type { EmblaOptionsType } from "embla-carousel";
 ---
 
 <div
-  class="text-white relative pb-32 lg:pb-0 lg:pt-20 pt-12 px-10 flex flex-col gap-12 bg-gradient-to-b from-[#000] to-[#000] lg:h-screen"
+  class="text-white relative pb-32 lg:pb-0 lg:px-10 lg:pt-20 pt-12 flex flex-col gap-12 bg-gradient-to-b from-[#000] to-[#000] lg:h-screen"
 >
   <h1
-    class="uppercase font-BoldItalic font-black tracking-[-0.01em] text-[32px] lg:text-[56px] text-center italic"
+    class="uppercase font-BoldItalic px-10 lg:px-0 font-black tracking-[-0.01em] text-[32px] lg:text-[56px] text-center italic"
   >
     how builders are using drake
   </h1>
@@ -19,17 +20,34 @@ import InteractiveCarousel from "./tsx/InteractiveCarousel";
   >
   </div>
 
-  <InteractiveCarousel client:load />
+  <InteractiveCarousel client:only />
 
   <!-- <EmblaCarousel client:load options={OPTIONS}>
-    <Card
-      img="/images/card1.svg"
-      desc="A social platform integrating real-time community rewards over Twitch & YouTube."
-    />
     <Card
       img="/images/card2.svg"
       desc="A creator agency analyzing 250 hours of content every day on behalf of leading brands."
     />
+
+    <Card
+      img="/images/card3.svg"
+      desc="A game studio embedding AI Agents to capture insights from every player session."
+    />
+
+    <Card
+      img="/images/card4.svg"
+      desc="A Prediction Market seeking robust real-time data feeds to scale their consumer app."
+    />
+
+    <Card
+      img="/images/card5.svg"
+      desc="Video game studios enabling community building analytics with zero integration."
+    />
+
+    <Card
+      img="/images/card6.svg"
+      desc="A marketing agency building automated real-time brand influencer matching."
+    />
+
     <Card
       img="/images/card1.svg"
       desc="A social platform integrating real-time community rewards over Twitch & YouTube."

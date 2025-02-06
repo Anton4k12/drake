@@ -9,16 +9,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
+const mql = window.matchMedia("(width <= 640px)");
+
 export default function CarouselSize() {
   return (
     <Carousel
       opts={{
-        align: "start",
+        align: mql.matches ? "center" : "start",
         loop: true,
       }}
       className="w-full"
     >
-      <CarouselContent className="flex gap-8">
+      <CarouselContent className="lg:max-w-auto flex gap-2 *:max-w-[80%] lg:gap-8">
         <CarouselItem className="md:basis-1/2 lg:basis-1/3">
           <Card
             img="/images/card2.svg"
@@ -54,13 +56,14 @@ export default function CarouselSize() {
           />
         </CarouselItem>
 
-        <CarouselItem className="pr-8 md:basis-1/2 lg:basis-1/3">
+        <CarouselItem className="pr-2 md:basis-1/2 lg:basis-1/3">
           <Card
             img="/images/card1.svg"
             desc="A social platform integrating real-time community rewards over Twitch & YouTube."
           />
         </CarouselItem>
       </CarouselContent>
+
       <CarouselPrevious />
       <CarouselNext />
     </Carousel>

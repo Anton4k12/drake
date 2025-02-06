@@ -14,7 +14,11 @@ const CompanyLogoData = [
   { src: "/images/logo14v.png", alt: "logo14" },
 ];
 
-const InfiniteScrollingLogosAnimation = () => {
+const InfiniteScrollingLogosAnimation = ({
+  direction,
+}: {
+  direction: string;
+}) => {
   // Create 4 copies of the logos to ensure smooth infinite scrolling
   const duplicatedLogos = [
     ...CompanyLogoData,
@@ -27,9 +31,9 @@ const InfiniteScrollingLogosAnimation = () => {
     <div className="container px-5 pt-5">
       <div className="relative flex overflow-hidden before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-10 before:content-[''] after:absolute after:right-0 after:top-0 after:h-full after:w-10 after:content-['']">
         <motion.div
-          animate={{
-            x: [0, -1920], // Adjust this value based on your container width
-          }}
+          animate={direction === "left" ? { x: [0, -1920] } : { x: [-1920, 0] }}
+          // Adjust this value based on your container width
+
           transition={{
             duration: 80,
             ease: "linear",
